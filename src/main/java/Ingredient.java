@@ -22,9 +22,5 @@ public class Ingredient {
 	 */
 	public void setLibelle(String libelle) {
 		this.libelle = libelle;
-	}
-	
-	
-	 
-	 
+	}	 
 }

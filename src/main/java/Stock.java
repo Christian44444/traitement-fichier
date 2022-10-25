@@ -16,7 +16,7 @@ public class Stock {
 			listeProduit = new ArrayList<Produit>();
 			
 			// Lecture du fichier des villes
-			String monFichier = "C:\\Users\\cmich\\Documents\\workspace-spring-tool-suite-4-4.16.0.RELEASE\\traitement-fichier\\open-food-facts.csv";
+			String monFichier = "traitement-fichier\\open-food-facts.csv";
 			Path chemin = Paths.get(monFichier);
 			List<String> lignes = Files.readAllLines(chemin, StandardCharsets.UTF_8);
 			// ne pas traiter la première ligne
