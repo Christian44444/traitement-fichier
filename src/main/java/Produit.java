@@ -1,13 +1,14 @@
 
 public class Produit {
-
+	
 	public String scoreNutritionnel;
-	public String energie;
-	public String sel;
 	public Categorie categorie;
 	public Marque marque;
+	public String energie;
+	public String sel;
 	
-	
+
+
 	public Produit(String scoreNutritionnel, String energie, String sel, Categorie categorie, Marque marque) {
 		super();
 		this.scoreNutritionnel = scoreNutritionnel;
@@ -59,10 +60,5 @@ public class Produit {
 	public void setMarque(Marque marque) {
 		this.marque = marque;
 	}
-	
-	
-	
-	
-	
 	
 }
