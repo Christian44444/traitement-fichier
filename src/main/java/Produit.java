@@ -1,52 +1,30 @@
+import java.util.ArrayList;
 
 public class Produit {
 	
-	public String scoreNutritionnel;
+	
 	public Categorie categorie;
 	public Marque marque;
-	public String energie;
-	public String sel;
+	public String scoreNutritionnel;
+	private ArrayList<Ingredient> ingredient;
+	private ArrayList<Allergene> allergènes;
 	
-
-
-	public Produit(String scoreNutritionnel, String energie, String sel, Categorie categorie, Marque marque) {
+	
+	public Produit(Categorie categorie, Marque marque, String scoreNutritionnel, ArrayList<Ingredient> ingredient,
+			ArrayList<Allergene> allergènes) {
 		super();
-		this.scoreNutritionnel = scoreNutritionnel;
-		this.energie = energie;
-		this.sel = sel;
 		this.categorie = categorie;
 		this.marque = marque;
-	}
-
-
-	public String getScoreNutritionnel() {
-		return scoreNutritionnel;
-	}
-
-	public void setScoreNutritionnel(String scoreNutritionnel) {
 		this.scoreNutritionnel = scoreNutritionnel;
-	}
-
-	public String getEnergie() {
-		return energie;
-	}
-
-	public void setEnergie(String energie) {
-		this.energie = energie;
-	}
-
-	public String getSel() {
-		return sel;
-	}
-
-	public void setSel(String sel) {
-		this.sel = sel;
+		this.ingredient = ingredient;
+		this.allergènes = allergènes;
 	}
 
 
 	public Categorie getCategorie() {
 		return categorie;
 	}
+
 
 	public void setCategorie(Categorie categorie) {
 		this.categorie = categorie;
@@ -57,8 +35,41 @@ public class Produit {
 		return marque;
 	}
 
+
 	public void setMarque(Marque marque) {
 		this.marque = marque;
 	}
+
+
+	public String getScoreNutritionnel() {
+		return scoreNutritionnel;
+	}
+
+
+	public void setScoreNutritionnel(String scoreNutritionnel) {
+		this.scoreNutritionnel = scoreNutritionnel;
+	}
+
+
+	public ArrayList<Ingredient> getIngredient() {
+		return ingredient;
+	}
+
+
+	public void setIngredient(ArrayList<Ingredient> ingredient) {
+		this.ingredient = ingredient;
+	}
+
+
+	public ArrayList<Allergene> getAllergènes() {
+		return allergènes;
+	}
+
+
+	public void setAllergènes(ArrayList<Allergene> allergènes) {
+		this.allergènes = allergènes;
+	}
 	
 }
+
+	
