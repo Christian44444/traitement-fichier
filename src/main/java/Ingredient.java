@@ -1,6 +1,6 @@
 
 public class Ingredient {
-	 private String libelle;
+	 public String libelle;
 
 	/**
 	 * Constructeur

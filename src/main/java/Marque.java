@@ -1,6 +1,6 @@
 
 public class Marque {
-	private String nom;
+	public String nom;
 
 	/**
 	 * Constructeur
