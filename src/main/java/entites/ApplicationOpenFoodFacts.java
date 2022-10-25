@@ -1,3 +1,4 @@
+package entites;
 import java.util.Scanner;
 
 import AfficherAddictifProduit;
